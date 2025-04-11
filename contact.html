@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Papy Olenga</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="top-title">Papy Olenga's Accessible Site</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="language.html">Plain Language</a></li>
+        <!-- <li><a href="#design">Design</a></li> -->
+        <li>
+          <a href="about.html">About Me</a>
+        </li>
+        <li class="active" aria-current="page">
+          <a href="contact.html">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="title-1">Contact Papy Olenga</h1>
+
+      <p>
+        I strive to respond to all inquiries within 48 hours. Please fill out
+        the form below with the required information. All fields are mandatory.
+      </p>
+      <form action="#" method="post">
+        <!-- Personal Information Section -->
+        <!-- <h2>Personal Information</h2> -->
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        <span class="error" id="name-error">Name is required.</span>
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email (e.g., example@domain.com)"
+          required
+        />
+        <span class="error" id="email-error"
+          >Please enter a valid email address.</span
+        >
+
+        <!-- Message Section -->
+        <!-- <h2>Message</h2> -->
+        <label for="message">Your Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message here"
+          required
+        ></textarea>
+        <span class="error" id="message-error">Message is required.</span>
+
+        <!-- Additional Questions Section -->
+        <h2>Additional Questions</h2>
+        <!-- Checkbox Question -->
+        <label>Which topics are you interested in?</label>
+        <input
+          type="checkbox"
+          id="topic-web"
+          name="topics"
+          value="Web Development"
+        />
+        <label for="topic-web">Web Development</label>
+
+        <input
+          type="checkbox"
+          id="topic-design"
+          name="topics"
+          value="UX Design"
+        />
+        <label for="topic-design">UX Design</label>
+
+        <input
+          type="checkbox"
+          id="topic-accessibility"
+          name="topics"
+          value="Accessibility"
+        />
+        <label for="topic-accessibility">Accessibility</label>
+
+        <!-- Radio Button Question -->
+        <label>How did you find us?</label>
+        <input
+          type="radio"
+          id="source-search"
+          name="source"
+          value="Search Engine"
+          required
+        />
+        <label for="source-search">Search Engine</label>
+
+        <input
+          type="radio"
+          id="source-social"
+          name="source"
+          value="Social Media"
+          required
+        />
+        <label for="source-social">Social Media</label>
+
+        <input
+          type="radio"
+          id="source-referral"
+          name="source"
+          value="Referral"
+          required
+        />
+        <label for="source-referral">Referral</label>
+
+        <!-- Submit and Cancel Buttons -->
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      &copy; All Rights Reserved - <span id="year"></span> Papy Olenga
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

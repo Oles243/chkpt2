@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  /* transition: all 0.5s ease; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  color: #333;
+  /* margin: inherit; */
+}
+
+body {
+  background-color: #c1bbbb;
+  margin-inline: auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  border: 2px solid #1d1c1c;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #181717;
+  box-shadow: 10px 8px 8px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 8px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 8px 8px 1px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease;
+}
+
+header {
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem 4rem;
+  border: 2px solid #000;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+table {
+  margin-inline: auto;
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  border: 3px solid #646161;
+}
+thead {
+  border-bottom: 3px solid #646161;
+  font-weight: 40px;
+}
+
+tbody {
+  background-color: #ffffff;
+}
+
+table,
+td,
+th {
+  /* border: 1px solid #646161; */
+  text-align: left;
+  padding: 4px;
+}
+
+th {
+  background-color: #c0aaaa;
+  font-weight: 700;
+}
+
+tr {
+  border-bottom: 1px solid #bdbbbb;
+}
+
+nav,
+main {
+  width: 100%;
+  margin-inline: auto;
+  padding: 1rem 4rem;
+  /* border: 5px solid green; */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* input, */
+/* textarea, */
+input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+}
+
+button {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+footer,
+footer > span {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px; */
+
+  width: 100%;
+  height: 2.5rem;
+  margin-top: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-inline: auto;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  gap: 10px;
+}
+
+nav li {
+  background-color: #a09c9c;
+  border-right: 2px solid #524f4f;
+  border-radius: 10px;
+  width: 8rem;
+  min-width: fit-content;
+
+  /* border: 3px solid blue; */
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active),
+li.active a {
+  background-color: #111;
+  color: aliceblue;
+  border-radius: 10px;
+}
+nav li a:focus {
+  outline: none;
+  background-color: #413737;
+  color: aliceblue;
+  border-radius: 10px;
+}
+p {
+  margin: 1rem;
+}
+blockquote {
+  margin: 1rem;
+  padding: 1rem 0.2rem;
+  border-left: 10px solid #333;
+  background-color: #a39b9b;
+  /* width: auto; */
+  width: fit-content;
+  font-size: large;
+  font-style: italic;
+  color: #333;
+}
+blockquote::before {
+  content: "“";
+  font-size: 2rem;
+  color: #333;
+  margin-right: 0.5rem;
+}
+blockquote::after {
+  content: "”";
+  font-size: 2rem;
+  color: #333;
+  margin-left: 0.5rem;
+}
+article {
+  padding: 1rem 5rem;
+  margin: 3rem;
+  /* border: 3px solid #333; */
+  border-radius: 10px;
+  width: 100%;
+  margin-inline: auto;
+  background-color: #e9e8e8;
+}
+
+caption {
+  font-size: large;
+  font-weight: bold;
+  margin: 0.5rem;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin: 0.5rem;
+}
+li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+li a:hover {
+  color: #413737;
+}
+li a:focus {
+  color: #413737;
+  outline: none;
+}
+li a:active {
+  color: #413737;
+}
+
+/* CLASSES */
+
+.top-title {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+.title-1 {
+  text-align: center;
+  margin: 1.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.title-2 {
+  margin: 1.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar {
+  background-color: #7e7c7c;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  /* border: 2px solid red; */
+}
+
+/* Style the navbar links */
+.navbar a {
+  display: block;
+  color: black;
+  text-align: center;
+}
