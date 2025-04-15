@@ -27,12 +27,15 @@
       <h1 class="title-1">Contact Papy Olenga</h1>
 
       <p>
-        I strive to respond to all inquiries within 48 hours. Please fill out
-        the form below with the required information. All fields are mandatory.
+        I strive to respond to all inquiries within 48 hours. </p><p>Please fill out
+        the form below with the required information. All fields are mandatory.</p>
       </p>
-      <form action="#" method="post">
+      <form action="#" method="post" class="contact-form">
         <!-- Personal Information Section -->
         <!-- <h2>Personal Information</h2> -->
+         <fieldset>
+          <legend>Contact Information</legend>
+        <div class="contact-form__inner">
         <label for="name">Name:</label>
         <input
           type="text"
@@ -41,7 +44,7 @@
           placeholder="Enter your name"
           required
         />
-        <span class="error" id="name-error">Name is required.</span>
+        <!-- <span class="error" id="name-error">Name is required.</span> -->
 
         <label for="email">Email:</label>
         <input
@@ -51,32 +54,34 @@
           placeholder="Enter your email (e.g., example@domain.com)"
           required
         />
-        <span class="error" id="email-error"
-          >Please enter a valid email address.</span
-        >
 
         <!-- Message Section -->
         <!-- <h2>Message</h2> -->
         <label for="message">Your Message:</label>
         <textarea
+          type="text"
+          rows="10"
+          cols="30"
           id="message"
           name="message"
           placeholder="Enter your message here"
           required
         ></textarea>
-        <span class="error" id="message-error">Message is required.</span>
+        <!-- <span class="error" id="message-error">Message is required.</span> -->
 
-        <!-- Additional Questions Section -->
-        <h2>Additional Questions</h2>
+        <!-- Additional Questiobns Section -->
+
         <!-- Checkbox Question -->
-        <label>Which topics are you interested in?</label>
+         <div class="checkbox-question">
+        <h1>Which topics are you interested in?</h1>
         <input
           type="checkbox"
           id="topic-web"
           name="topics"
           value="Web Development"
+          
         />
-        <label for="topic-web">Web Development</label>
+        <label for="topic-web">Web Development</label><br />
 
         <input
           type="checkbox"
@@ -84,7 +89,7 @@
           name="topics"
           value="UX Design"
         />
-        <label for="topic-design">UX Design</label>
+        <label for="topic-design">UX Design</label><br />
 
         <input
           type="checkbox"
@@ -92,40 +97,45 @@
           name="topics"
           value="Accessibility"
         />
-        <label for="topic-accessibility">Accessibility</label>
+        <label for="topic-accessibility">Accessibility</label><br />
+        </div>
 
         <!-- Radio Button Question -->
-        <label>How did you find us?</label>
+         <div class="radio-question">
+        <h1>How did you find us?</h1>
         <input
           type="radio"
           id="source-search"
           name="source"
           value="Search Engine"
-          required
+          
         />
-        <label for="source-search">Search Engine</label>
+        <label for="source-search">Search Engine</label><br />
 
         <input
           type="radio"
           id="source-social"
           name="source"
           value="Social Media"
-          required
+          
         />
-        <label for="source-social">Social Media</label>
+        <label for="source-social">Social Media</label><br />
 
         <input
           type="radio"
           id="source-referral"
           name="source"
           value="Referral"
-          required
+          
         />
-        <label for="source-referral">Referral</label>
+        <label for="source-referral">Referral</label><br />
+        </div>
 
         <!-- Submit and Cancel Buttons -->
         <button type="submit">Submit</button>
+        </fieldset>
       </form>
+      </div>
     </main>
 
     <footer>
